@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="594.0" prefWidth="830.0" styleClass="anchor" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.showReclamController">
+    <stylesheets>
+        <URL value="@../../assets/css/background.css" />
+    </stylesheets>
+    <children>
+      <TableView fx:id="reclamTable" layoutY="212.0" prefHeight="409.0" prefWidth="830.0">
+        <columns>
+          <TableColumn fx:id="idCol" prefWidth="64.30187833309174" text="ID" />
+          <TableColumn fx:id="nameCol" prefWidth="134.943359375" text="NAME" />
+            <TableColumn fx:id="emailCol" minWidth="0.0" prefWidth="133.13206481933594" text="EMAIL" />
+            <TableColumn fx:id="phoneCol" minWidth="0.0" prefWidth="130.4150390625" text="PHONE" />
+            <TableColumn fx:id="messageCol" prefWidth="278.0379333496094" text="MESSAGE" />
+            <TableColumn fx:id="resCol" prefWidth="89.6602783203125" text="RESOLU" />
+        </columns>
+      </TableView>
+      <Text layoutX="317.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamation" wrappingWidth="228.20949172973633">
+         <font>
+            <Font name="Agency FB" size="47.0" />
+         </font>
+      </Text>
+      <Button layoutX="741.0" layoutY="38.0" mnemonicParsing="false" onMouseClicked="#insertButton" text="Insert" />
+      <Button layoutX="95.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#delete" text="Delete" />
+      <Button fx:id="up" layoutX="739.0" layoutY="88.0" mnemonicParsing="false" onAction="#updateButton" text="Update" />
+      <TextField fx:id="filterField" layoutX="260.0" layoutY="164.0" prefHeight="25.0" prefWidth="301.0" />
+      <Text layoutX="212.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search :" />
+      <Button layoutX="14.0" layoutY="162.0" mnemonicParsing="false" onAction="#refreshTable" text="Refresh" />
+      <Button layoutX="742.0" layoutY="143.0" mnemonicParsing="false" onAction="#chartBuilder" text="Chart" />
+      <Button fx:id="mail" layoutX="28.0" layoutY="23.0" mnemonicParsing="false" onMouseClicked="#mailButton" text="Admin Home" />
+      <Button layoutX="38.0" layoutY="93.0" mnemonicParsing="false" onMouseClicked="#gg" text="PDF" />
+   </children>
+</AnchorPane>

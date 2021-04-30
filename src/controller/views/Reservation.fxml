@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="539.0" style="-fx-background-color: #2A0033;" stylesheets="@../../assets/css/fullpackstyling.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ReservationController">
+   <children>
+      <Pane layoutY="87.0" prefHeight="570.0" prefWidth="539.0" stylesheets="@../../assets/css/fullpackstyling.css">
+         <children>
+            <TextField fx:id="adultFld" layoutX="203.0" layoutY="86.0" prefHeight="34.0" prefWidth="281.0" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../../assets/css/style.css" />
+            <Label layoutX="56.0" layoutY="93.0" text="Adult" textFill="#ddd9d9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="55.0" layoutY="153.0" text="Children" textFill="#ddd9d9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Separator layoutX="56.0" layoutY="383.0" opacity="0.15" prefHeight="3.0" prefWidth="423.0" />
+            <Separator layoutX="54.0" layoutY="36.0" opacity="0.15" prefHeight="3.0" prefWidth="423.0" />
+            <Button fx:id="btn" layoutX="315.0" layoutY="445.0" mnemonicParsing="false" onMouseClicked="#res" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #FCBB31;" text="Suivant" textFill="WHITE" />
+            <Button fx:id="btn" layoutX="164.0" layoutY="445.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="112.0" style="-fx-background-color: #CE201C;" text="Reserver" textFill="WHITE" />
+            <TextField fx:id="childrenFld" layoutX="202.0" layoutY="144.0" prefHeight="34.0" prefWidth="281.0" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../../assets/css/style.css" />
+            <Label layoutX="55.0" layoutY="214.0" text="Nombre de jour" textFill="#ddd9d9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="54.0" layoutY="268.0" text="Nombre de chambre" textFill="#ddd9d9">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="jourFld" layoutX="201.0" layoutY="206.0" prefHeight="34.0" prefWidth="281.0" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../../assets/css/style.css" />
+            <TextField fx:id="chambreFld" layoutX="201.0" layoutY="262.0" prefHeight="34.0" prefWidth="281.0" style="-fx-border-color: #9643A9; -fx-background-color: #2A0033; -fx-background-insets: 0; -fx-border-radius: 20;" styleClass="text-input" stylesheets="@../../assets/css/style.css" />
+         </children>
+      </Pane>
+      <Label layoutX="218.0" layoutY="40.0" text="Reservation" textFill="#ddd9d9">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

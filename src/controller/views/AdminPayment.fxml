@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="716.0" prefWidth="1208.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPaymentController">
+   <children>
+      <Pane layoutX="-14.0" prefHeight="139.0" prefWidth="996.0" style="-fx-background-color: #2D75E8;" stylesheets="@../../assets/css/fullpackstyling.css" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="rechercheFld" layoutX="806.0" layoutY="85.0" prefHeight="27.0" prefWidth="259.0" style="-fx-border-color: #2D75E8;" />
+            <Label layoutX="51.0" layoutY="21.0" text="Dealseek" textFill="WHITE">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+            <Button fx:id="recherche12" layoutX="49.0" layoutY="78.0" mnemonicParsing="false" onAction="#refreshTable" prefHeight="27.0" prefWidth="189.0" style="-fx-background-color: #2D75E8;" text="Payment management" textFill="WHITE" />
+            <TextField fx:id="Fld" layoutX="655.0" layoutY="283.0" onKeyTyped="#searchRecord" prefHeight="35.0" prefWidth="259.0" style="-fx-border-color: #2D75E8;" />
+         </children>
+      </Pane>
+      <GridPane hgap="15.0" layoutX="45.0" layoutY="158.0" prefHeight="103.0" prefWidth="869.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="158.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="372.0000244140625" minWidth="10.0" prefWidth="272.40000610351564" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="476.99995117187495" minWidth="10.0" prefWidth="240.39999389648438" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="481.6" minWidth="10.0" prefWidth="248.59992675781245" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="266.20010986328134" minWidth="10.0" prefWidth="240.6000732421876" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Pane prefHeight="103.0" prefWidth="190.0" style="-fx-background-color: #EEAC4C; -fx-background-radius: 1em;" GridPane.columnIndex="1">
+               <children>
+                  <Label layoutX="47.0" layoutY="70.0" text="Total Payment" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="40.0" layoutY="25.0" text="12" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="235.0" style="-fx-background-color: #5CB55B; -fx-background-radius: 1em;" GridPane.columnIndex="2">
+               <children>
+                  <Label layoutX="46.0" layoutY="70.0" text="Total Reservation" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="25.0" text="14" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="0.0" style="-fx-background-color: #D7534E; -fx-background-radius: 1em;" GridPane.columnIndex="3">
+               <children>
+                  <Label layoutX="57.0" layoutY="70.0" text="Total" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="25.0" text="+62" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="103.0" prefWidth="286.0" style="-fx-background-color: #3A84C3; -fx-background-radius: 1em;">
+               <children>
+                  <Label alignment="CENTER" layoutX="62.0" layoutY="65.0" text="Total Activities" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="72.0" layoutY="20.0" text="36" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+      <TableView fx:id="tbData" layoutX="39.0" layoutY="328.0" prefHeight="336.0" prefWidth="1134.0" stylesheets="@../../assets/css/fullpackstyling.css">
+         <columns>
+            <TableColumn fx:id="firstNameFld" prefWidth="151.99998474121094" text="First Name" />
+            <TableColumn fx:id="lastNameFld" prefWidth="75.0" text="Last Name" />
+            <TableColumn fx:id="EmailFld" prefWidth="75.0" text="Email" />
+            <TableColumn fx:id="PhoneFld" prefWidth="75.0" text="Phone" />
+            <TableColumn fx:id="CardFld" prefWidth="75.0" text="Card number" />
+            <TableColumn fx:id="CardFld1" prefWidth="75.0" text="Action" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+
+         </columnResizePolicy>
+      </TableView>
+      <Button fx:id="recherche" layoutX="1063.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#rechercheres" prefHeight="27.0" prefWidth="112.0" style="-fx-background-color: #1ABC9C;" text="Rechercher" textFill="WHITE" />
+      <Button layoutX="1061.0" layoutY="672.0" mnemonicParsing="false" onMouseClicked="#home" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #FCBB31;" text="Go back" textFill="WHITE" />
+      <Button layoutX="917.0" layoutY="281.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #FCBB31;" text="Filtrer" textFill="WHITE" />
+      <Button fx:id="recherche2" layoutX="1036.0" layoutY="281.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="134.0" style="-fx-background-color: #1ABC9C;" text="Telecharger PDF" textFill="WHITE" />
+   </children>
+</AnchorPane>

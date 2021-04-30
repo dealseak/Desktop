@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="414.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.updateReclamController">
+    <children>
+        <TextField id="name" fx:id="name" layoutX="54.0" layoutY="74.0" prefHeight="43.0" prefWidth="245.0" />
+        <TextField id="email" fx:id="email" layoutX="54.0" layoutY="151.0" prefHeight="41.0" prefWidth="245.0" />
+        <TextField id="phone" fx:id="phone" layoutX="336.0" layoutY="73.0" prefHeight="41.0" prefWidth="245.0" />
+        <TextArea id="message" fx:id="message" layoutX="54.0" layoutY="232.0" prefHeight="131.0" prefWidth="528.0" />
+        <Text layoutX="265.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reclamation Update" textAlignment="CENTER" wrappingWidth="105.98703002929688" />
+        <Button fx:id="saveButton" layoutX="298.0" layoutY="374.0" mnemonicParsing="false" onAction="#update" onMouseClicked="#update" text="Save" />
+        <Text layoutX="54.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        <Text layoutX="52.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name :" />
+        <Text layoutX="54.0" layoutY="148.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email :" />
+        <Text layoutX="336.0" layoutY="68.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone :" />
+        <Text layoutX="54.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message :" />
+      <ChoiceBox fx:id="res" layoutX="410.0" layoutY="158.0" prefWidth="150.0" />
+      <Text layoutX="339.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Résolution :" />
+    </children>
+</AnchorPane>

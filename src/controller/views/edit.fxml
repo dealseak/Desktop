@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="277.0" prefWidth="318.0" style="-fx-background-color: #151928;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditController">
+   <children>
+      <TextField fx:id="nome" layoutX="10.0" layoutY="54.0" prefHeight="25.0" prefWidth="286.0" />
+      <TextField fx:id="prenome" layoutX="10.0" layoutY="96.0" prefHeight="25.0" prefWidth="286.0" />
+      <TextField fx:id="emaile" layoutX="10.0" layoutY="139.0" prefHeight="25.0" prefWidth="286.0" />
+      <Button fx:id="edite" layoutX="113.0" layoutY="175.0" mnemonicParsing="false" onMouseClicked="#edit" style="-fx-background-color: #38b4d0; -fx-text-fill: #151928; -fx-border-radius: 0px;" text="sauvegarder" />
+      <Label fx:id="label" layoutX="34.0" layoutY="200.0" prefHeight="63.0" prefWidth="251.0" textFill="WHITE" />
+      <Text fill="#fffdfd" layoutX="10.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fffdfd" layoutX="10.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#fffdfd" layoutX="10.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
